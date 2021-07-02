@@ -105,14 +105,6 @@ void load_dalvik_properties() {
 }
 
 void vendor_load_properties() {
-    std::string fingerprint;
-    std::string description;
-
-    fingerprint = "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys";
-    description = "tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys";
-
-    set_ro_build_prop("fingerprint", fingerprint);
-    property_override("ro.build.description", description.c_str());
 
     load_dalvik_properties();
     workaround_properties();
