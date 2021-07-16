@@ -191,6 +191,9 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libmm-qcamera
 
+PRODUCT_PACKAGES += \
+    Camera2
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
