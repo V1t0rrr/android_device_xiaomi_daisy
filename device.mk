@@ -413,7 +413,8 @@ PRODUCT_PACKAGES += \
     init.daisy.rc \
     init.soundcontrol.rc \
     init.target.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    apex_metadata.rc
 
 PRODUCT_PACKAGES += \
     init.camera.sh \
