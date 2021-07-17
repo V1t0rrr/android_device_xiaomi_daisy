@@ -508,7 +508,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
     libcld80211 \
     libqmiservices_shim \
-    libqsap_sdk \
     libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
