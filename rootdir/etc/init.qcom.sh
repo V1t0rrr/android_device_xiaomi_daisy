@@ -362,7 +362,7 @@ case "$target" in
         fi
         ;;
     "msm8953")
-	start_msm_irqbalance_8939
+	start_msm_irqbalance
         if [ -f /sys/devices/soc0/soc_id ]; then
             soc_id=`cat /sys/devices/soc0/soc_id`
         else
