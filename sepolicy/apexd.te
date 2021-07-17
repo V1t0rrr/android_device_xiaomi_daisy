@@ -1,0 +1,2 @@
+allow apexd apex_metadata_file:lnk_file r_file_perms;
+
