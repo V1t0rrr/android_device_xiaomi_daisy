@@ -194,9 +194,6 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libmm-qcamera
 
-PRODUCT_PACKAGES += \
-    Camera2
-
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
