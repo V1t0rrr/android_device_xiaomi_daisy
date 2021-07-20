@@ -141,6 +141,10 @@ persist.qfp=false
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.fm.transmitter=false
 
+# FOD
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.fingerprint.inscreen_disabled=true
+
 # Frp
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
