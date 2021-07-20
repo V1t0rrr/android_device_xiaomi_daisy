@@ -20,6 +20,10 @@ type gx_fpd_data_file, file_type, core_data_file_type, data_file_type;
 type idc_file, file_type, vendor_file_type;
 type keylayout_file, file_type, vendor_file_type;
 
+# Insmod
+type sysfs_msm_boot, fs_type, sysfs_type;
+type debugfs_ipc, fs_type, debugfs_type;
+
 # /proc
 type proc_last_kmsg, fs_type, proc_type;
 
