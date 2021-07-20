@@ -51,7 +51,7 @@ vendor/lib/libadm.so|a5e6c65b7133440b4550234db4454e4c81627f66
 vendor/lib/libaudcal.so|1c9598d084940495067348a68c5ff85ded0a52bf
 vendor/lib/libaudioalsa.so|58feb2c5cbc4ac6e23ef4896c87785bed8db3c80
 vendor/lib/libaudioconfigstore.so|5b4d7d4f6840f65c1c630578fb3611d9ce47e268
-vendor/lib/libaudioparsers.so|4b980c4392b6e800fb23213a0daaa83b35c04051
+-vendor/lib/libaudioparsers.so|4b980c4392b6e800fb23213a0daaa83b35c04051
 -vendor/lib/libaudio_log_utils.so|7fb2bb0abd10ca763ae5d079a8070e9d3d493bf9
 vendor/lib/libdrc.so|303d67b5bfea162ae994d3817de317258035c42a
 vendor/lib/libqtigef.so|80fb4a524d9d11c6e94c337ea263256f816f1f39
@@ -68,7 +68,7 @@ vendor/lib64/libadiertac.so|98a8c2702d4e203689e4a80c69c4b1cf93af1567
 vendor/lib64/libaudcal.so|09f5fe513d72664f8fa1ebd7f17ce676e8741346
 vendor/lib64/libaudioalsa.so|534d4dc07fecea0611273c745721b1ed2015a3a3
 vendor/lib64/libaudioconfigstore.so|a862e94f4fc75ce3c3274f219be8c128fe58a822
-vendor/lib64/libaudioparsers.so|67f6836de4391c33cc030faa5c885ab250324291
+-vendor/lib64/libaudioparsers.so|67f6836de4391c33cc030faa5c885ab250324291
 -vendor/lib64/libaudio_log_utils.so|3670ed70e68b209f67852cad81b74d2dda2de3cd
 vendor/lib64/libqtigef.so|9108e3248c066102d7c57dd79d3e960647a8c84d
 vendor/lib64/libtinycompress.so|8d670f7c3079e96b5a36945e95082104876dd64a
