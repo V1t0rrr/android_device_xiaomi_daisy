@@ -5,13 +5,11 @@
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.dex2oat-filter=speed \
-dalvik.vm.image-dex2oat-filter=speed \
-dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.image-dex2oat-filter=speed
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 audio.offload.disable=true \
-ro.config.media_vol_steps=25 \
 ro.config.vc_call_vol_steps=6 \
 ro.vendor.audio.sdk.fluencetype=fluence \
 vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1 \
@@ -22,10 +20,8 @@ vendor.qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7
 
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.bt.a2dp.aac_whitelist=false \
 persist.vendor.qcom.bluetooth.enable.splita2dp=false \
-ro.vendor.bluetooth.wipower=false \
-ro.bluetooth.library_name=libbluetooth_qti.so
+ro.vendor.bluetooth.wipower=false
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -122,7 +118,6 @@ debug.stagefright.omx_default_rank=0 \
 media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
 media.stagefright.thumbnail.prefer_hw_codecs=true \
-vendor.mm.enable.qcom_parser=1048575 \
 mm.enable.smoothstreaming=true \
 mm.enable.sec.smoothstreaming=true \
 mmp.enable.3g2=true \
