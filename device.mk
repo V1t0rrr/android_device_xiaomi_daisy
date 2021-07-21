@@ -282,11 +282,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
-# IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ft5435_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5435_ts.kl \
@@ -406,7 +401,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno-legacy \
     av \
     bt \
-    vibrator
+    vibrator \
+    telephony
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -442,17 +438,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor \
     librmnetctl \
     libcnefeatureconfig \
-    libxml2 \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml
+    libxml2
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
