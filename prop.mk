@@ -58,10 +58,6 @@ persist.camera.HAL3.enabled=1
 PRODUCT_PRODUCT_PROPERTIES += \
 ro.charger.enable_suspend=true
 
-# Cne
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.cne.feature=1
-
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
@@ -90,7 +86,6 @@ vendor.gralloc.enable_fb_ubwc=1
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.dpm.feature=11 \
 persist.vendor.dpm.loglevel=0 \
 persist.vendor.dpm.nsrm.bkg.evt=3955 \
 persist.vendor.dpmhalservice.enable=1 \
@@ -146,9 +141,7 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.use_data_netmgrd=true \
 persist.data.netmgrd.qos.enable=true \
-persist.vendor.data.mode=concurrent
 
 # Nitz
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -164,32 +157,22 @@ persist.rild.nitz_short_ons_3=""
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-DEVICE_PROVISIONED=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=1 \
-persist.vendor.radio.apm_sim_not_pwdn=1 \
-persist.vendor.radio.procedure_bytes=SKIP \
-persist.radio.multisim.config=dsds \
 persist.radio.VT_ENABLE=1 \
 persist.radio.volte.dan_support=true \
 persist.sys.cust.lte_config=true \
 persist.vendor.radio.add_power_save=1 \
-persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.jbims=1 \
-persist.vendor.radio.rat_on=combine \
-persist.vendor.radio.sib16_support=1 \
-persist.vendor.radio.enableadvancedscan=0 \
 persist.vendor.data.iwlan.enable=true \
 persist.dbg.ims_volte_enable=1 \
 persist.data.iwlan=1 \
 persist.data.iwlan.ipsec.ap=1 \
-ril.subscription.types=NV,RUIM \
 rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.iwlan_operation_mode=legacy \
 ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=22,20 \
 service.qti.ims.enabled=1 \
 persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
