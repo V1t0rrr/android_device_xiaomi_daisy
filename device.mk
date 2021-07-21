@@ -190,9 +190,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl \
     libcurl
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
-
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
@@ -376,7 +373,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     vibrator \
     wfd \
-    audio
+    audio \
+    gps
 
 # Ramdisk
 PRODUCT_PACKAGES += \
