@@ -212,11 +212,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
 
-# Iorapd
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    iorapd.perfetto.enable=true \
-    iorapd.readahead.enable=true
-
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
