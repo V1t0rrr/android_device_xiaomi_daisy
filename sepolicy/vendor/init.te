@@ -1,2 +1,5 @@
 allow init proc_boot_reason:file r_file_perms;
 allow init blkio_dev:file { create open read write };
+allow init oemfs:dir mounton;
+allow init sysfs_leds:lnk_file read;
+allow init vfat:dir search;
