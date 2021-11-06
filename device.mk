@@ -20,12 +20,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/qcom-caf/msm8996
+    $(LOCAL_PATH)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aospa
 
 # RRO configuration
 PRODUCT_ENFORCE_RRO_TARGETS := \
@@ -34,6 +33,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := msm8953
+TARGET_BOARD_PLATFORM := msm8953
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -279,11 +279,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 
-# HALS
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
-
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
@@ -340,10 +335,6 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.msm8953
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_PACKAGES += \
@@ -428,7 +419,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.camera.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
+    init.daisy.usb.rc \
     init.recovery.qcom.rc \
     init.recovery.qcom.usb.rc \
     init.daisy.rc \
