@@ -416,7 +416,8 @@ PRODUCT_PACKAGES += \
 # QTI Common
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
-    bt
+    bt \
+    vibrator
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -502,11 +503,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
 
 # Vulkan
 PRODUCT_PACKAGES += \
