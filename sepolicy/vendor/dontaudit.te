@@ -1,0 +1,3 @@
+# Only allow diag use access only on userdebug/eng builds
+# qc legacy/vendor/common/qti.te#L62
+dontaudit qti diag_device:chr_file rw_file_perms;
