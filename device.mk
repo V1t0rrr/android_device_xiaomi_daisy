@@ -388,7 +388,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.camera.rc \
     init.qcom.rc \
     init.daisy.usb.rc \
     init.recovery.qcom.rc \
@@ -399,7 +398,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.camera.sh \
     init.class_main.sh \
     init.goodix.sh \
     init.qcom.early_boot.sh \
