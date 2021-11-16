@@ -177,9 +177,6 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-# SurfaceFlinger
-TARGET_USE_AOSP_SURFACEFLINGER := true
-
 # Treble
 BOARD_VNDK_VERSION := current
 
