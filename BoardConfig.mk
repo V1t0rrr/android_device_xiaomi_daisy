@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+# Android device path
 DEVICE_PATH := device/xiaomi/daisy
 
 # ANT
@@ -177,6 +178,9 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Telephony
+TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
+
 # Treble
 BOARD_VNDK_VERSION := current
 
@@ -193,9 +197,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 
-# Telephony
-TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
-
-# Inherit from the proprietary version
+# Vendor inherit
 -include vendor/xiaomi/daisy/BoardConfigVendor.mk
 -include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
