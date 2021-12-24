@@ -27,6 +27,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
+# Inherit from MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 # Inherit some common Pixys stuff.
 $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
