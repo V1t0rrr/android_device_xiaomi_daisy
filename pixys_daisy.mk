@@ -27,12 +27,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Pixys stuff.
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := aosp_daisy
+PRODUCT_NAME := pixys_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
@@ -41,3 +41,12 @@ TARGET_VENDOR := Xiaomi
 
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps Config
+TARGET_GAPPS_ARCH := arm64
+
+# Live Wallpaper
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
+# Google Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
