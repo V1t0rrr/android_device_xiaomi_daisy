@@ -24,6 +24,7 @@ import android.util.Log;
 import android.provider.Settings;
 
 import org.lineageos.settings.dirac.DiracUtils;
+import org.lineageos.settings.camera.CameraUtils;
 import org.lineageos.settings.soundcontrol.SoundControlSettings;
 import org.lineageos.settings.soundcontrol.SoundControlFileUtils;
 
